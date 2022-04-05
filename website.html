@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MP:MP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="website.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("data:image/jpeg;base64,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");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">OUR STORY</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MEET THE TEAM</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WATCH</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+  
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Morgan Parry:<br>Moped Police</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">THE STORY OF THE BIKING BOY IN BLUE</span></h5>
+    <p>Morgan Parry: Moped Police is a series following the misadventures of the titular character as he solves petty crimes in the fictional village of Griffithstown while riding on his moped. In the pilot episode, our car copper wants to prove to his family he can be a “real” police officer, but be careful what you wish for Morgan! He is hilariously underprepared when his mother gets kidnapped. Can he save the day?</p>
+    <p><b>New episodes every Friday, released on Netflix and Youtube</b></p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"The best cop show since Line of Duty - A refreshing break from the tiring drama series that are popular today"</i></p>
+      <p>-The South Wales Argus</p>
+    </div>
+ 
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MEET THE TEAM</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Cast</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Crew</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>PCSO Morgan Parry - Morgan Parry</h5>
+        <img src="mogan.jpg" style="width:20%;max-width:1000px;margin-top:32px;margin-bottom:32px;">
+    
+      <h5>DSU Helen Wetherby - Eira Reed</h5>
+      <img src="eira.jpg" style="width:20%;max-width:1000px;margin-top:32px;margin-bottom:32px;">
+    
+      <h5>DCI Rory Wetherby - Archie Meyer-Daniels</h5>
+      <img src="archie.jpg" style="width:20%;max-width:1000px;margin-top:32px;margin-bottom:32px;">
+    
+      <h5>Narrator - Thomas Clark</h5>
+      <img src="simon.jpg" style="width:20%;max-width:1000px;margin-top:32px;margin-bottom:32px;">
+    
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Executive Producer - Morgan Parry</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Director - Eira Reed</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Editor and writer - Archie Meyer-Daniels</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Administrative Work - Ellie Stevens</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
